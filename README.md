@@ -47,7 +47,44 @@ gpg --import [path-to-this-file]
 gpg --verify [signed-file]
 ```
 
+## Let's build the Web of Trust! Guide on importing, signing, and sharing my GPG public key
+
+### Importing the Public Key from `keys.openpgp.org`
+Step 1: Import the Public Key
+- Open the terminal or command prompt.
+- Execute the following command to import the public key:
+
+```
+gpg --keyserver hkps://keys.openpgp.org --recv-keys 8C88CE5DC72E96CED5581FC587A7AC396148B732
+```
+This command downloads and imports the public key from `keys.openpgp.org` (Or you can go to the website and download it).
+
+Step 2: Verify the Public Key
+- Before signing, check the details of the public key to make sure its finger print is the same as listed in this website:
+```
+$gpg --fingerprint 8C88CE5DC72E96CED5581FC587A7AC396148B732
+pub   rsa3072 2024-01-31 [SC]
+      8C88 CE5D C72E 96CE D558  1FC5 87A7 AC39 6148 B732
+```
+
+### Signing the Public Key
+Step 3: Sign the Public Key
+- Use the following command to sign the public key:
+```
+gpg --sign-key 8C88CE5DC72E96CED5581FC587A7AC396148B732
+```
+- Follow the prompts to complete the signing process.
+
+Step 4: Upload the Signed Key
+- After signing, upload the updated public key back to the keyserver:
+```
+gpg --keyserver hkps://keys.openpgp.org --send-keys 8C88CE5DC72E96CED5581FC587A7AC396148B732
+```
+
+
 ## My Public Key (or you can download the same key from this repo `publickey.asc`)
+Due to the signatures, my public key that you downloaded from keys.openpgp.org may not look exactly the same as below.
+But after you import, all of them should have the same fingerprint as show in this website. All of them can be used to verify my signature. 
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
