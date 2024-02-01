@@ -9,6 +9,7 @@ This repository contains the official GPG public key released by Haoda Fu. You c
 ```
 Key Owner: Haoda Fu
 Email: mylastnamefirstname@gmail.com
+Key ID: 8C88CE5DC72E96CED5581FC587A7AC396148B732
 Fingerprint: 8C88 CE5D C72E 96CE D558  1FC5 87A7 AC39 6148 B732
 ```
 
