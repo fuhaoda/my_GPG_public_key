@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains the official GPG public key released by Haoda Fu. You can use this key to securely send encrypted messages or files to me, or to verify digital signatures on documents or emails that I have signed.
+This repository contains the official GPG public key released by Haoda Fu. You can use this key to securely send encrypted messages or files to me, or to verify digital signatures on documents or emails that I have signed. Please also help me to verify my public key to build Web of Trust whenever you can. 
 
 ## Key Information
 
